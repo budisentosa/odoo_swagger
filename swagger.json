@@ -61,25 +61,24 @@
       }
     },
     "loginid" : {
-      "required" : [ "name" ],
+      "required" : [ "dbname", "username", "pwd" ],
       "properties" : {
-        "name" : {
+        "dbname" : {
           "type" : "string",
-          "example" : "ACME Corporation"
+          "example" : "demo"
         },
-        "homePage" : {
+        "username" : {
           "type" : "string",
-          "format" : "url",
-          "example" : "https://www.acme-corp.com"
+          "example" : "demo"
         },
-        "phone" : {
+        "pwd" : {
           "type" : "string",
-          "example" : "408-867-5309"
+          "example" : "demo"
         }
       }
     }
   },
-  "host" : "virtserver.swaggerhub.com",
   "schemes" : [ "https" ],
-  "basePath" : "/avasoft.co/login/1.0.0"
+  "basePath" : "/avasoft.co/login/1.0.0",
+  "host" : "virtserver.swaggerhub.com"
 }
