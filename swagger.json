@@ -51,20 +51,32 @@
       "type" : "object",
       "required" : [ "methodName" ],
       "properties" : {
-        "params2" : {
+        "methodName" : {
           "type" : "string",
           "example" : "login"
         },
         "params" : {
-          "$ref" : "#/definitions/loginid"
+          "$ref" : "#/definitions/params"
         }
       }
     },
-    "params3" : {
-      "type" : "object",
+    "params" : {
       "properties" : {
-        "params" : {
-          "$ref" : "#/definitions/loginid"
+        "value" : {
+          "type" : "object"
+        },
+        "properties" : null,
+        "dbname" : {
+          "type" : "string",
+          "example" : "demo"
+        },
+        "username" : {
+          "type" : "string",
+          "example" : "demo"
+        },
+        "pwd" : {
+          "type" : "string",
+          "example" : "demo"
         }
       }
     },
