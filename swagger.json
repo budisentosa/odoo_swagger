@@ -29,7 +29,7 @@
           "name" : "inventoryItem",
           "description" : "Inventory item to add",
           "schema" : {
-            "$ref" : "#/definitions/logindata"
+            "$ref" : "#/definitions/methodCall"
           }
         } ],
         "responses" : {
@@ -47,7 +47,7 @@
     }
   },
   "definitions" : {
-    "logindata" : {
+    "methodCall" : {
       "type" : "object",
       "required" : [ "methodName" ],
       "properties" : {
@@ -60,6 +60,7 @@
         }
       }
     },
+    "params" : null,
     "loginid" : {
       "required" : [ "dbname", "username", "pwd" ],
       "properties" : {
