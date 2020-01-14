@@ -16,14 +16,14 @@
     "description" : "Operations available to regular developers"
   } ],
   "paths" : {
-    "/inventory" : {
+    "/xmlrpc/common/" : {
       "post" : {
         "tags" : [ "admins" ],
-        "summary" : "adds an inventory item",
-        "operationId" : "addInventory",
-        "description" : "Adds an item to the system",
-        "consumes" : [ "application/json" ],
-        "produces" : [ "application/json" ],
+        "summary" : "login",
+        "operationId" : "login",
+        "description" : "login to odoo",
+        "consumes" : [ "application/xml" ],
+        "produces" : [ "application/xml" ],
         "parameters" : [ {
           "in" : "body",
           "name" : "inventoryItem",
