@@ -29,7 +29,7 @@
           "name" : "inventoryItem",
           "description" : "Inventory item to add",
           "schema" : {
-            "$ref" : "#/definitions/InventoryItem"
+            "$ref" : "#/definitions/logindata"
           }
         } ],
         "responses" : {
