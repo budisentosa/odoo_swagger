@@ -55,21 +55,12 @@
           "type" : "string",
           "example" : "login"
         },
-        "name" : {
-          "type" : "string",
-          "example" : "Widget Adapter"
-        },
-        "releaseDate" : {
-          "type" : "string",
-          "format" : "date-time",
-          "example" : "2016-08-29T09:12:33.001Z"
-        },
-        "manufacturer" : {
-          "$ref" : "#/definitions/Manufacturer"
+        "params" : {
+          "$ref" : "#/definitions/loginid"
         }
       }
     },
-    "Manufacturer" : {
+    "loginid" : {
       "required" : [ "name" ],
       "properties" : {
         "name" : {
