@@ -49,7 +49,7 @@
   "definitions" : {
     "InventoryItem" : {
       "type" : "object",
-      "required" : [ "id", "name", "manufacturer", "releaseDate" ],
+      "required" : [ null, "name", "manufacturer", "releaseDate" ],
       "properties" : {
         "id" : {
           "type" : "string",
