@@ -65,7 +65,12 @@
         "value" : {
           "type" : "object"
         },
-        "properties" : null,
+        "properties" : {
+          "type" : "string",
+          "params" : {
+            "$ref" : "#/definitions/params"
+          }
+        },
         "dbname" : {
           "type" : "string",
           "example" : "demo"
@@ -99,6 +104,6 @@
     }
   },
   "schemes" : [ "https" ],
-  "basePath" : "/avasoft.co/login/1.0.0",
-  "host" : "virtserver.swaggerhub.com"
+  "host" : "virtserver.swaggerhub.com",
+  "basePath" : "/avasoft.co/login/1.0.0"
 }
